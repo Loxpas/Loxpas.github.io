@@ -285,7 +285,7 @@ html{
 }
 
 /* Estilo para el título */
-.technical-skills h3 {
+.technical-skills h1 {
     grid-column: span 3; /* Ocupa todas las columnas */
     margin-bottom: 20px; /* Espacio debajo del título */
 }

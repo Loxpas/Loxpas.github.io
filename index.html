@@ -323,21 +323,40 @@
             <div class="fila">
                 <div class="col">
                     <form id="contactForm" action="https://formspree.io/f/mgveeyaj" method="POST">
-                        <input type="text" name="name" placeholder="Tú Nombre" required>
-                        <input type="tel" name="phone" placeholder="Número telefónico" required>
-                        <input type="email" name="email" placeholder="Dirección de correo" required>
-                        <input type="text" name="subject" placeholder="Tema" required>
-                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        <button type="submit">
+                        <!-- Campo Nombre -->
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Tú Nombre" required>
+    
+                        <!-- Campo Número telefónico -->
+                        <label for="phone">Número telefónico:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Número telefónico" required>
+    
+                        <!-- Campo Dirección de correo -->
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+    
+                        <!-- Campo Tema -->
+                        <label for="subject">Tema:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Tema" required>
+    
+                        <!-- Campo Mensaje -->
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+    
+                        <!-- Botón de Envío -->
+                        <button type="submit" aria-label="Enviar Mensaje">
                             Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
                     </form>
-                    <div id="confirmationMessage" style="display:none;">¡Gracias por tu mensaje!</div>
+    
+                    <!-- Mensaje de confirmación accesible -->
+                    <div id="confirmationMessage" style="display:none;" role="status" aria-live="polite">¡Gracias por tu mensaje!</div>
                 </div>
             </div>
         </div>
     </section>
+    
 
 
 
