@@ -19,16 +19,16 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Loxpas</a>
+                <a href="#">Arturo Velazquez</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">RESUME</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -41,12 +41,13 @@
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner"><br><br><br>
+        <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/Yo.jpg" alt="">
+                <img src="img/Yo.jpg" alt="Foto de Arturo Velazquez">
             </div>
             <h1>Arturo Velazquez</h1>
-            <h2>Ingeniero de Software - Developer</h2>
+            <h2>Ingeniero de Software - Desarrollador</h2>
+
             <div class="redes">
                 <a href="https://www.linkedin.com/in/loxpas/" target="_blank" rel="noopener noreferrer"
                     aria-label="Perfil de LinkedIn de Arturo">
@@ -56,88 +57,149 @@
                     aria-label="Perfil de GitHub de Arturo">
                     <i class="fab fa-github"></i>
                 </a>
-
             </div>
-            <a href="pdfs/CV.pdf" download="CV.pdf" target="_blank" class="sin-subrayado">
-                <button id="descargarCV">
-                    Download CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </button>
-            </a>
+
+            <a href="pdfs/CV.pdf" download="CV.pdf" target="_blank" class="btn-cv sin-subrayado"> Descargar CV <i
+                    class="fa-solid fa-download"></i> <span class="overlay"></span> </a>
         </div>
     </section>
-
 
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>About me</h2>
-            <p><span>Hello, I'm Arturo Velazquez.</span>
-                <br> • I am a software engineering student.
-                <br> • I always strive for good order and management. I make an effort to learn and adapt to what is
-                needed to complete my tasks.
-                <br> • My goal is to be a proficient developer and a dedicated learner simultaneously. I am eager for
-                the opportunity to work on projects and expand my capabilities.
-                <br>
-                <br> <span>My strengths</span>
-            <h1> ◆ Commitment to Quality:</h1>
-            <br> My commitment to quality is reflected in my meticulous approach to software design, coding, and
-            testing. I strive to uphold high standards in all aspects of development.
-            <br>
-            <br>
-            <h1> ◆ Collaborative Work:</h1>
-            <br> I enjoy working on projects that require close collaboration. My willingness to share knowledge and
-            support my colleagues strengthens team cohesion and contributes to the overall success of the project.
-            <br>
-            <br>
-            <h1> ◆ Innovation and Creativity:</h1>
-            <br> I am passionate about innovation and creativity in software development. I am constantly seeking new
-            ways to address challenges and enhance processes.
-            </p>
+        <div class="about-container">
+            <div class="about-header">
+                <h2>SOBRE MI</h2>
+                <p class="subtitle">
+                    Conóceme mejor: Mi trayectoria, mis pasiones y lo que me motiva en el mundo de la tecnología.
+                </p>
+            </div>
 
-            <!-- datos personales -->
-            <div class="fila">
-                <div class="col">
-                    <h1>Datos Personales</h1>
-                    <ul>
-                        <li>
-                            <strong>Phone</strong>
-                            (+52) 313-730-1654
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            Loxpas2003@gmail.com
-                        </li>
-                        <li>
-                            <strong>Location</strong>
-                            Colima, Mexico
-                        </li>
-                    </ul>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="intro-text">
+                        <span class="highlight">Hola, Soy Arturo Velazquez.</span>
+                        Soy un Ingeniero de Software que transforma desafíos complejos en soluciones eficientes y
+                        escalables. Mi curiosidad y compromiso con el aprendizaje continuo me impulsan a estar siempre a
+                        la vanguardia, aplicando las mejores tecnologías para construir software robusto y de alto
+                        rendimiento.
+                        <br><br>
+                        Mi experiencia se centra en el desarrollo de aplicaciones web, manejando tanto el frontend con
+                        React como el backend con Python (Django), Node.js y PHP. Disfruto participando en todo el ciclo
+                        de vida del producto, desde la conceptualización hasta el despliegue.
+                    </div>
+
+                    <div class="strengths-grid">
+                        <div class="strength-item">
+                            <i class="fa-solid fa-medal strength-icon"></i>
+                            <div class="strength-content">
+                                <h4>Compromiso con la Calidad</h4>
+                                <p>Enfoque meticuloso en el diseño, codificación y pruebas de software con altos
+                                    estándares en todos los aspectos del desarrollo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="strength-item">
+                            <i class="fa-solid fa-handshake strength-icon"></i>
+                            <div class="strength-content">
+                                <h4>Trabajo Colaborativo</h4>
+                                <p>Fuerte jugador de equipo que disfruta compartir conocimiento y apoyar a los colegas
+                                    para alcanzar el éxito del proyecto.</p>
+                            </div>
+                        </div>
+
+                        <div class="strength-item">
+                            <i class="fa-solid fa-rocket strength-icon"></i>
+                            <div class="strength-content">
+                                <h4>Innovación y Creatividad</h4>
+                                <p>Apasionado por encontrar nuevas formas de abordar desafíos y mejorar los procesos de
+                                    desarrollo.</p>
+                            </div>
+                        </div>
+
+                        <div class="strength-item">
+                            <i class="fa-solid fa-puzzle-piece strength-icon"></i>
+                            <div class="strength-content">
+                                <h4>Solución de Problemas</h4>
+                                <p>Capacidad para analizar problemas complejos, descomponerlos y desarrollar soluciones
+                                    técnicas efectivas y duraderas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-user"></i> Informacion Personal</h3>
+                        <ul class="personal-info">
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <strong>Celular:</strong>
+                                <span>(+52) 313-730-1654</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <strong>Correo:</strong>
+                                <span>Loxpas2003@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <strong>Ubicacion:</strong>
+                                <span>Colima, Mexico</span>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-user-tie"></i> Habilidades Profesionales</h3>
+                        <div class="prof-grid">
+                            <div class="prof-skill-item">
+                                <i class="fa-solid fa-comments prof-icon"></i>
+                                <span>Comunicación</span>
+                            </div>
+                            <div class="prof-skill-item">
+                                <i class="fa-solid fa-users prof-icon"></i>
+                                <span>Trabajo en Equipo</span>
+                            </div>
+                            <div class="prof-skill-item">
+                                <i class="fa-solid fa-lightbulb prof-icon"></i>
+                                <span>Creatividad</span>
+                            </div>
+                            <div class="prof-skill-item">
+                                <i class="fa-solid fa-trophy prof-icon"></i>
+                                <span>Dedicación</span>
+                            </div>
+                            <div class="prof-skill-item">
+                                <i class="fa-solid fa-puzzle-piece prof-icon"></i>
+                                <span>Solución de Problemas</span>
+                            </div>
+                            <div class="prof-skill-item">
+                                <i class="fa-solid fa-clock prof-icon"></i>
+                                <span>Manejo de Tiempo</span>
+                            </div>
+                        </div>
+                    </div>
 
-
-                <!-- intereses -->
-                <div class="col">
-                    <h1>Interests</h1>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>VideoGames</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSIC</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>TRAVEL</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>SPORT</span>
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-heart"></i> Intereses</h3>
+                        <div class="interests-grid">
+                            <div class="interest-item">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Gaming</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>Musica</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Viajes</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>Deporte</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,78 +208,72 @@
     </section>
 
 
-
-    <!-- SECCION SKILLS -->
+    <!-- SECCION SKILLS MEJORADA -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col technical-skills"> <!-- Clase específica aquí -->
-                    <h1>Technical Skills</h1>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-js fa-4x" style="color: #FFD43B;"></i>
-                        <strong><span>Javascript</span></strong>
+            <h2>HABILIDADES TÉCNICAS</h2>
+
+            <div class="skills-container">
+
+                <div class="skills-box">
+                    <h4>Frontend</h4>
+                    <div class="tech-grid">
+                        <div class="skill-item"><i class="fa-brands fa-html5 icon-html"></i><span>HTML5</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt icon-css"></i><span>CSS3</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-js icon-js"></i><span>JavaScript</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-file-code icon-ts"></i><span>TypeScript</span>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-react icon-react"></i><span>React</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-react icon-react"></i><span>React Native</span>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-layer-group icon-mui"></i><span>Material UI</span>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-html5 fa-4x" style="color: #FFD43B;"></i>
-                        <strong><span>HTML</span></strong>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-css3-alt fa-4x" style="color: #74C0FC;"></i>
-                        <strong><span>CSS</span></strong>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-android fa-4x" style="color: #63E6BE;"></i>
-                        <strong><span>Kotlin</span></strong>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-php fa-4x" style="color: #B197FC;"></i>
-                        <strong><span>PHP</span></strong>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-linux fa-4x" style="color: black;"></i>
-                        <strong><span>Linux</span></strong>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-solid fa-gears fa-4x" style="color: gray;"></i>
-                        <strong><span>DevOps</span></strong>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-github fa-4x" style="color: black;"></i>
-                        <strong><span>GitHub</span></strong>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-git-alt fa-4x" style="color: #ff7e5f;"></i>
-                        <strong><span>Git</span></strong>
+
+                    <h4>Backend</h4>
+                    <div class="tech-grid">
+                        <div class="skill-item"><i class="fa-brands fa-python icon-python"></i><span>Python</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-node-js icon-node"></i><span>Node.js</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-server icon-django"></i><span>Django</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-server icon-fastapi"></i><span>FastAPI</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h1>Professional Skills</h1>
-                    <div class="skill">
-                        <span>Communication</span>
-                        <p>Effective communication is crucial in my work. I excel in conveying complex technical
-                            concepts to both technical and non-technical stakeholders, fostering clear understanding and
-                            collaboration.</p>
+                <div class="skills-box">
+                    <h4>Bases de Datos</h4>
+                    <div class="tech-grid">
+                        <div class="skill-item"><i class="fa-solid fa-database icon-mysql"></i><span>MySQL</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-database icon-sqlserver"></i><span>SQL
+                                Server</span></div>
+                        <div class="skill-item"><i
+                                class="fa-solid fa-database icon-postgres"></i><span>PostgreSQL</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-leaf icon-mongo"></i><span>MongoDB</span></div>
                     </div>
-                    <div class="skill">
-                        <span>Teamwork</span>
-                        <p>My ability to contribute ideas and support team goals enhances overall productivity.</p>
+
+                    <h4>Mobile & Game Dev</h4>
+                    <div class="tech-grid">
+                        <div class="skill-item"><i class="fa-brands fa-android fa-4x"
+                                style="color: #63E6BE;"></i><span>Kotlin</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-gamepad icon-godot"></i><span>Godot</span></div>
                     </div>
-                    <div class="skill">
-                        <span>Creativity</span>
-                        <p>I bring a creative mindset to problem-solving, finding innovative solutions to challenges.
-                            This approach enables me to develop unique and efficient solutions that contribute.</p>
+
+                    <h4>Herramientas y Control de Versiones</h4>
+                    <div class="tech-grid">
+                        <div class="skill-item"><i class="fa-brands fa-git-alt icon-git"></i><span>Git</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-github icon-github"></i><span>GitHub</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-linux icon-linux"></i><span>Linux</span></div>
                     </div>
-                    <div class="skill">
-                        <span>Dedication</span>
-                        <p>I am deeply committed to achieving excellence in my work. This dedication is reflected in my
-                            consistent effort to stay updated with the latest industry trends, learn new technologies,
-                            and deliver high-quality results.</p>
+
+                    <h4>Business Intelligence</h4>
+                    <div class="tech-grid">
+                        <div class="skill-item"><i class="fa-solid fa-chart-simple icon-powerbi"></i><span>Power
+                                BI</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-file-excel icon-excel"></i><span>Excel</span>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -226,39 +282,96 @@
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h1>RESUME</h1>
+            <h1>CURRICULUM</h1>
             <div class="fila">
                 <div class="col izquierda">
-                    <h2>EDUCATION</h2>
+                    <h2>EDUCACIÓN</h2>
                     <div class="item izq">
-                        <h2>Ingenieria En Software</h2>
-                        <span class="casa">Universidad de Colima</span>
-                        <span class="fecha">2021 - 2025</span>
-                        <p>Currently, I am pursuing a degree in Software Engineering. Throughout my studies, I have
-                            actively participated in practical projects that have strengthened my ability to apply both
-                            theoretical and practical concepts. These projects include the development of web and mobile
-                            applications, as well as some involvement in database management.</p>
-                        <!-- <div class="conectori">
+                        <h2>Analista Programador</h2>
+                        <div class="institucion">
+                            <img src="img/udcLogo.png" alt="Logo Universidad de Colima">
+                            <span class="casa">Universidad de Colima</span>
+                        </div>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>Formación técnica centrada en los fundamentos del desarrollo. Aquí adquirí una base sólida en
+                            lógica de programación, algoritmos y estructuras de datos.</p>
+                        <div class="conectori">
                             <div class="circuloi"></div>
-                        </div> -->
+                        </div>
                     </div>
-
+                    <div class="item izq">
+                        <h2>Ingeniería En Software</h2>
+                        <div class="institucion">
+                            <img src="img/udcLogo.png" alt="Logo Universidad de Colima">
+                            <span class="casa">Universidad de Colima</span>
+                        </div>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>En esta etapa, evolucioné de programador a ingeniero, profundizando en principios avanzados
+                            de arquitectura de software, patrones de diseño y metodologías ágiles (Scrum). Apliqué estos
+                            conocimientos en el desarrollo de soluciones robustas y escalables, con un fuerte enfoque en
+                            la calidad del código y el testing.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
                 </div>
 
-
-
-                <!--<div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
+                <div class="col derecha">
+                    <h2>EXPERIENCIA LABORAL</h2>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Front-End Developer Jr.</h4>
+                        <div class="institucion">
+                            <img src="img/smarttieLogo.jpg" alt="Logo Smartiie">
+                            <span class="casa">Smartiie - Prácticas</span>
+                        </div>
+                        <span class="fecha">Noviembre 2024 - Junio 2025</span>
+                        <ul>
+                            <li>Desarrollo de componentes de interfaz de usuario responsivos utilizando React.</li>
+                            <li>Creación de herramientas internas y tableros para optimizar flujos de trabajo.</li>
+                            <li>Participación en revisiones de código y ciclos de sprints ágiles para garantizar
+                                entregables de alta calidad.</li>
+                            <li>Colaboración con diseñadores para asegurar una implementación pixel-perfect de las
+                                interfaces.</li>
+                        </ul>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
-                </div> -->
+                    <div class="item der">
+                        <h4>Analista de Datos</h4>
+                        <div class="institucion">
+                            <img src="img/alsaLogo.png" alt="Logo Alsa Informatica">
+                            <span class="casa">Alsa Informatica</span>
+                        </div>
+                        <span class="fecha">Octubre 2024 - Septiembre 2025</span>
+                        <ul>
+                            <li>Elaboración de reportes para el área contable mediante consultas SQL complejas.</li>
+                            <li>Desarrollo de automatizaciones para optimizar procesos y reducir tareas repetitivas.
+                            </li>
+                            <li>Soporte en la implementación de un nuevo sistema ERP, colaborando en la migración y
+                                adaptación de datos.</li>
+                            <li>Apoyo a la toma de decisiones a través de reportes estructurados, claros y precisos.
+                            </li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Jr.</h4>
+                        <div class="institucion">
+                            <img src="img/woodwardLogo.png" alt="Logo WoodWard Group">
+                            <span class="casa">WoodWard Group</span>
+                        </div>
+                        <span class="fecha">Septiembre 2025 - Actualidad</span>
+                        <p>Desarrollador de Software enfocado en el mantenimiento y desarrollo de aplicaciones web
+                            utilizando PHP, un framework propietario y SQL Server. Colaboro activamente dentro de un
+                            equipo que opera bajo la metodología ágil Scrum.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -266,50 +379,43 @@
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h1>PORTFOLIO</h1>
+            <h1>PORTAFOLIO</h1>
             <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
+
+                <a href="https://loxpas.github.io/" target="_blank" rel="noopener noreferrer" class="proyecto">
+                    <img src="img/laptop.png" alt="Captura de pantalla de página web personal">
                     <div class="overlay">
-                        <h1>Diseño Creativo</h1>
-                        <p>Si</p>
+                        <h3>Pagina web personal</h3>
+                        <p>Portafolio</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
+                </a>
+
+                <a href="https://loxpas.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="proyecto">
+                    <img src="img/toloacheLogo.png" alt="Logo de la tienda en línea Toloache">
                     <div class="overlay">
-                        <h1>Diseño Creativo</h1>
-                        <p>Si</p>
+                        <h3>Toloache</h3>
+                        <p>Tienda en Linea</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
+                </a>
+
+                <a href="https://loxpas.github.io/Colima.github.io/" target="_blank" rel="noopener noreferrer"
+                    class="proyecto">
+                    <img src="img/colimaLogo.png" alt="Logo del proyecto Descubre Colima">
                     <div class="overlay">
-                        <h1>Diseño Creativo</h1>
-                        <p>Si</p>
+                        <h3>Colima</h3>
+                        <p>Descubre Colima</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
+                </a>
+
+                <a href="https://loxpas.itch.io/wild-adventure" target="_blank" rel="noopener noreferrer"
+                    class="proyecto">
+                    <img src="img/espadaLogo.png" alt="Logo del juego Wild Adventures">
                     <div class="overlay">
-                        <h1>Diseño Creativo</h1>
-                        <p>Si</p>
+                        <h3>Wild Adventures</h3>
+                        <p>Juego Hecho en Godot</p>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h1>Diseño Creativo</h1>
-                        <p>Si</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h1>Diseño Creativo</h1>
-                        <p>Si</p>
-                    </div>
-                </div>
+                </a>
+
             </div>
         </div>
     </section>
@@ -326,39 +432,38 @@
                         <!-- Campo Nombre -->
                         <label for="name">Nombre:</label>
                         <input type="text" id="name" name="name" placeholder="Tú Nombre" required>
-    
+
                         <!-- Campo Número telefónico -->
                         <label for="phone">Número telefónico:</label>
                         <input type="tel" id="phone" name="phone" placeholder="Número telefónico" required>
-    
+
                         <!-- Campo Dirección de correo -->
                         <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
-    
+
                         <!-- Campo Tema -->
                         <label for="subject">Tema:</label>
                         <input type="text" id="subject" name="subject" placeholder="Tema" required>
-    
+
                         <!-- Campo Mensaje -->
                         <label for="message">Mensaje:</label>
-                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-    
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje"
+                            required></textarea>
+
                         <!-- Botón de Envío -->
                         <button type="submit" aria-label="Enviar Mensaje">
                             Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
                     </form>
-    
+
                     <!-- Mensaje de confirmación accesible -->
-                    <div id="confirmationMessage" style="display:none;" role="status" aria-live="polite">¡Gracias por tu mensaje!</div>
+                    <div id="confirmationMessage" style="display:none;" role="status" aria-live="polite">¡Gracias por tu
+                        mensaje!</div>
                 </div>
             </div>
         </div>
     </section>
-    
-
-
 
 
     <!-- footer -->
@@ -367,10 +472,12 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="https://www.linkedin.com/in/loxpas/" target="_blank" aria-label="Perfil de Linkedin de Arturo"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/Loxpas" target="_blank" aria-label="Perfil de GitHub de Arturo"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/loxpas/" target="_blank" aria-label="Perfil de Linkedin de Arturo"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Loxpas" target="_blank" aria-label="Perfil de GitHub de Arturo"><i
+                    class="fab fa-github"></i></a>
         </div>
-        <p>© 2024 Arturo Velazquez. All rights reserved.</p>
+        <p>© 2025 Arturo Velazquez. All rights reserved.</p>
     </footer>
 
     <script src="forms.js"></script>
