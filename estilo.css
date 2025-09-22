@@ -10,6 +10,7 @@
 html {
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* MENU */
@@ -373,67 +374,9 @@ html {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 40px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .interests-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-header h2 {
-        font-size: 2.2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .hero-image img {
-        width: 220px;
-        height: 220px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .interests-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.nav-responsive {
-    display: none;
-}
-
 @media screen and (max-width: 980px) {
+
+    /* --- MENÚ HAMBURGUESA --- */
     nav {
         display: none;
     }
@@ -441,34 +384,140 @@ html {
     .nav-responsive {
         display: block;
     }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
 }
 
-/* Ajustes para la nueva sección de Habilidades Profesionales */
-.info-card .prof-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columnas */
-    gap: 15px;
-    /* Espacio entre items */
-    margin-top: 15px;
+@media screen and (max-width: 768px) {
+    /* --- AJUSTES GENERALES PARA TABLET --- */
+
+    /* SECCIÓN SOBRE MI */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-text,
+    .info-card {
+        padding: 25px 20px;
+    }
+
+    .personal-info li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .personal-info strong {
+        min-width: unset;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* SECCIÓN HABILIDADES */
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .prof-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skills h2 {
+        font-size: 36px;
+    }
 }
 
-.info-card .prof-skill-item {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
+@media screen and (max-width: 700px) {
+    /* --- AJUSTES PARA MÓVILES (SOLUCIÓN AL OVERFLOW) --- */
+
+    /* SECCIÓN CURRICULUM */
+    .curriculum .fila {
+        display: block;
+        /* Apila las columnas */
+    }
+
+    .curriculum .fila .col {
+        width: 100%;
+        /* Ocupan todo el ancho */
+        padding: 0 10px;
+        margin: 0;
+        border: none;
+    }
+
+    .curriculum .fila .item {
+        margin: 30px 0;
+    }
+
+    /* Ocultamos los conectores que causan el desbordamiento */
+    .curriculum .fila .item .conectori,
+    .curriculum .fila .item .conectord {
+        display: none;
+    }
+
+    /* SECCIÓN PORTAFOLIO */
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    /* SECCIÓN CONTACTO */
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
 }
 
-.info-card .prof-skill-item i {
-    display: block;
-    /* El icono arriba */
-    font-size: 1.5rem;
-    /* Tamaño del icono */
-    margin-bottom: 8px;
-    /* Espacio debajo del icono */
+
+@media screen and (max-width: 480px) {
+
+    /* --- AJUSTES FINALES PARA MÓVILES PEQUEÑOS --- */
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* Color para los iconos de habilidades profesionales */
+/* Color para los iconos de Habilidades Profesionales */
 .prof-icon {
     color: #1CB698;
 }
