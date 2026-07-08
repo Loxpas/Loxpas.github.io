@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Arturo Enrique Velazquez Garcia</title>
+    <style>
+        /* --- REGLAS ESPECÍFICAS PARA CREAR EL PDF --- */
+        @page {
+            margin: 0.5cm; /* Forza al navegador a usar un margen casi nulo */
+            size: letter; /* Define el tamaño de hoja Carta */
+        }
+        
+        @media print {
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            .container {
+                box-shadow: none !important;
+                border: none !important; /* Se quita el borde gris porque en PDF luce mejor sin él */
+                padding: 10px 25px !important;
+            }
+        }
+        /* ------------------------------------------- */
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.35;
+            color: #000000;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            color: #000000;
+            margin: 0 0 3px 0;
+            font-size: 1.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            color: #333333;
+            font-size: 0.9em;
+        }
+        .contact-info a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 2px;
+            margin-top: 14px;
+            margin-bottom: 6px;
+            font-size: 1.15em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .experience-item {
+            margin-bottom: 10px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        h3 {
+            color: #000000;
+            margin: 0;
+            font-size: 1.05em;
+            font-weight: bold;
+        }
+        .date {
+            font-style: italic;
+            color: #555555;
+            font-size: 0.85em;
+            margin: 0;
+        }
+        p, li {
+            font-size: 0.95em;
+            color: #222222;
+            margin-top: 2px;
+            margin-bottom: 3px;
+        }
+        ul {
+            margin-top: 2px;
+            margin-bottom: 4px;
+            padding-left: 18px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 0.8fr;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        .bottom-grid h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ARTURO ENRIQUE VELAZQUEZ GARCIA</h1>
+            <div class="contact-info">
+                Colima, Mexico | arturo.velazquez.wrx@gmail.com | +52 313 730 1654<br>
+                <a href="https://www.linkedin.com/in/Loxpas" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/Loxpas" target="_blank">GitHub</a> | 
+                <a href="https://loxpas.github.io" target="_blank">Portfolio</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Software Engineer</h2>
+            <p>Software developer with experience in web and mobile environments. Specialized in creating scalable solutions that optimize processes and facilitate data-driven decision-making. Focused on proactive problem-solving, agile methodologies, and adding direct technical value to the business through the adoption of new technologies.</p>
+        </section>
+
+        <section>
+            <h2>TECHNICAL SKILLS</h2>
+            <div class="skills-grid">
+                <div>
+                    <strong>Languages:</strong>
+                    <p style="margin: 2px 0;">JavaScript, Python, TypeScript, HTML, CSS, Kotlin, PHP</p>
+                </div>
+                <div>
+                    <strong>Frameworks & Libs:</strong>
+                    <p style="margin: 2px 0;">React, React Native, Django, Node.js, Godot</p>
+                </div>
+                <div>
+                    <strong>Tools & DBs:</strong>
+                    <p style="margin: 2px 0;">SQL Server, MySQL, PostgreSQL, MongoDB, Git, Power BI</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3>WoodWard Group - Jr. Developer</h3>
+                    <span class="date">September 2025 - Present</span>
+                </div>
+                <ul>
+                    <li>Development and maintenance of the enterprise portal using PHP, proprietary framework, and SQL Server.</li>
+                    <li>Design and architecture of a mobile application aimed at tracking and controlling vessel merchandise.</li>
+                    <li>Active collaboration within a multidisciplinary team under the agile Scrum methodology.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3>Alsa Informatica (Fertilizantes Gomez) - Data Analyst</h3>
+                    <span class="date">January 2025 - September 2025</span>
+                </div>
+                <ul>
+                    <li>Optimization and automation of accounting processes through advanced SQL queries and customized reports.</li>
+                    <li>Strategic support in data migration and adaptation for the implementation of a new ERP system.</li>
+                    <li>Facilitation of decision-making through the structured delivery of accurate financial information.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3>Smarttie - FrontEnd Developer (Internship - Remote)</h3>
+                    <span class="date">November 2024 - July 2025</span>
+                </div>
+                <ul>
+                    <li>Construction of responsive and pixel-perfect UI components using React and Material-UI.</li>
+                    <li>Development of internal tools and control dashboards aimed at workflow optimization.</li>
+                    <li>Participation in sprint cycles and code reviews focused on ensuring high-quality standards.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <div class="bottom-grid">
+            <section>
+                <h2>EDUCATION</h2>
+                <ul style="padding-left: 0; list-style: none;">
+                    <li><strong>Software Engineering</strong><br><span style="font-size:0.9em; color:#555;">Universidad de Colima | 2021-2025</span></li>
+                    <li style="margin-top: 3px;"><strong>Programmer Analyst Technician</strong><br><span style="font-size:0.9em; color:#555;">Universidad de Colima | 2018-2021</span></li>
+                </ul>
+            </section>
+            <section>
+                <h2>SOFT SKILLS</h2>
+                <ul style="padding-left: 15px; margin-bottom: 0;">
+                    <li>Problem-solving</li>
+                    <li>Team collaboration</li>
+                    <li>Technical adaptability</li>
+                    <li>Time management</li>
+                </ul>
+            </section>
+            <section>
+                <h2>LANGUAGES</h2>
+                <ul style="padding-left: 0; list-style: none;">
+                    <li><strong>Spanish:</strong> Native</li>
+                    <li><strong>English:</strong> B1</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
