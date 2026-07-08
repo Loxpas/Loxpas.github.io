@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Etiquetas SEO Básicas -->
+    <title>Arturo Velazquez | Ingeniero de Software</title>
+    <meta name="description" content="Portafolio profesional de Arturo Velazquez, Ingeniero de Software y Desarrollador con experiencia en React, Node.js, Python y PHP. Radicado en Colima, México.">
+    <meta name="keywords" content="Arturo Velazquez, Ingeniero de Software, Desarrollador Web, FrontEnd, BackEnd, Portafolio, Colima, React, Python">
+    <meta name="author" content="Arturo Velazquez">
+
+    <!-- Etiquetas Open Graph (Para redes sociales como LinkedIn, WhatsApp, etc.) -->
+    <meta property="og:title" content="Arturo Velazquez | Ingeniero de Software">
+    <meta property="og:description" content="Descubre mi portafolio, experiencia y proyectos en el desarrollo de software.">
+    <meta property="og:image" content="img/Yo.jpg">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="icon" href="img/laptop.png">
 </head>
-
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
@@ -31,173 +41,165 @@
                     <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()" aria-label="Menú de navegación" role="button">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </div>
         </header>
     </div>
-
-
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/Yo.jpg" alt="Foto de Arturo Velazquez">
+                <img src="img/Yo.jpg" alt="Foto de Arturo Velazquez, Ingeniero de Software">
             </div>
             <h1>Arturo Velazquez</h1>
-            <h2>Ingeniero de Software - Desarrollador</h2>
-
+            <h2>Ingeniero de Software — Desarrollador</h2>
             <div class="redes">
                 <a href="https://www.linkedin.com/in/loxpas/" target="_blank" rel="noopener noreferrer"
                     aria-label="Perfil de LinkedIn de Arturo">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                 </a>
                 <a href="https://github.com/Loxpas" target="_blank" rel="noopener noreferrer"
                     aria-label="Perfil de GitHub de Arturo">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
             </div>
-
-            <a href="pdfs/CV.pdf" download="CV.pdf" target="_blank" class="btn-cv sin-subrayado"> Descargar CV <i
-                    class="fa-solid fa-download"></i> <span class="overlay"></span> </a>
+            <div class="cv-buttons">
+                <a href="cv/ES.pdf" target="_blank" class="btn-cv sin-subrayado" aria-label="Ver Curriculum en Español">
+                    CV Español <i class="fa-solid fa-file-lines" aria-hidden="true"></i> <span class="overlay"></span>
+                </a>
+                <a href="cv/EN.pdf" target="_blank" class="btn-cv sin-subrayado" aria-label="View Resume in English">
+                    CV English <i class="fa-solid fa-file-lines" aria-hidden="true"></i> <span class="overlay"></span>
+                </a>
+            </div>
         </div>
     </section>
-
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="about-container">
-            <div class="about-header">
-                <h2>SOBRE MI</h2>
+            <div class="section-head">
+                <span class="eyebrow">Dossier — 01/05</span>
+                <h2>Sobre mi</h2>
                 <p class="subtitle">
-                    Conóceme mejor: Mi trayectoria, mis pasiones y lo que me motiva en el mundo de la tecnología.
+                    Conóceme mejor: mi trayectoria, mis pasiones y lo que me motiva en el mundo de la tecnología.
                 </p>
             </div>
-
             <div class="about-content">
                 <div class="about-text">
                     <div class="intro-text">
-                        <span class="highlight">Hola, Soy Arturo Velazquez.</span>
+                        <span class="highlight">Hola, soy Arturo Velazquez.</span>
                         Soy un Ingeniero de Software que transforma desafíos complejos en soluciones eficientes y
                         escalables. Mi curiosidad y compromiso con el aprendizaje continuo me impulsan a estar siempre a
                         la vanguardia, aplicando las mejores tecnologías para construir software robusto y de alto
                         rendimiento.
                         <br><br>
-                        Mi experiencia se centra en el desarrollo de aplicaciones web, manejando tanto el frontend con
-                        React como el backend con Python (Django), Node.js y PHP. Disfruto participando en todo el ciclo
+                        Mi experiencia se centra en el desarrollo de aplicaciones web y moviles, manejando frontend y backend. Disfruto participando en todo el ciclo
                         de vida del producto, desde la conceptualización hasta el despliegue.
                     </div>
-
                     <div class="strengths-grid">
                         <div class="strength-item">
-                            <i class="fa-solid fa-medal strength-icon"></i>
+                            <i class="fa-solid fa-medal strength-icon" aria-hidden="true"></i>
                             <div class="strength-content">
-                                <h4>Compromiso con la Calidad</h4>
+                                <h4>Compromiso con la calidad</h4>
                                 <p>Enfoque meticuloso en el diseño, codificación y pruebas de software con altos
-                                    estándares en todos los aspectos del desarrollo.
-                                </p>
+                                    estándares en todos los aspectos del desarrollo.</p>
                             </div>
                         </div>
-
                         <div class="strength-item">
-                            <i class="fa-solid fa-handshake strength-icon"></i>
+                            <i class="fa-solid fa-handshake strength-icon" aria-hidden="true"></i>
                             <div class="strength-content">
-                                <h4>Trabajo Colaborativo</h4>
+                                <h4>Trabajo colaborativo</h4>
                                 <p>Fuerte jugador de equipo que disfruta compartir conocimiento y apoyar a los colegas
                                     para alcanzar el éxito del proyecto.</p>
                             </div>
                         </div>
-
                         <div class="strength-item">
-                            <i class="fa-solid fa-rocket strength-icon"></i>
+                            <i class="fa-solid fa-rocket strength-icon" aria-hidden="true"></i>
                             <div class="strength-content">
-                                <h4>Innovación y Creatividad</h4>
+                                <h4>Innovación y creatividad</h4>
                                 <p>Apasionado por encontrar nuevas formas de abordar desafíos y mejorar los procesos de
                                     desarrollo.</p>
                             </div>
                         </div>
-
                         <div class="strength-item">
-                            <i class="fa-solid fa-puzzle-piece strength-icon"></i>
+                            <i class="fa-solid fa-puzzle-piece strength-icon" aria-hidden="true"></i>
                             <div class="strength-content">
-                                <h4>Solución de Problemas</h4>
+                                <h4>Solución de problemas</h4>
                                 <p>Capacidad para analizar problemas complejos, descomponerlos y desarrollar soluciones
                                     técnicas efectivas y duraderas.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="about-info">
                     <div class="info-card">
-                        <h3><i class="fa-solid fa-user"></i> Informacion Personal</h3>
+                        <h3><i class="fa-solid fa-user" aria-hidden="true"></i> Información Personal</h3>
                         <ul class="personal-info">
                             <li>
-                                <i class="fa-solid fa-phone"></i>
-                                <strong>Celular:</strong>
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                <strong>Celular</strong>
                                 <span>(+52) 313-730-1654</span>
                             </li>
                             <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                <strong>Correo:</strong>
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                <strong>Correo</strong>
                                 <span>Loxpas2003@gmail.com</span>
                             </li>
                             <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <strong>Ubicacion:</strong>
-                                <span>Colima, Mexico</span>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <strong>Ubicación</strong>
+                                <span>Colima, México</span>
                             </li>
                         </ul>
                     </div>
-
                     <div class="info-card">
-                        <h3><i class="fa-solid fa-user-tie"></i> Habilidades Profesionales</h3>
+                        <h3><i class="fa-solid fa-user-tie" aria-hidden="true"></i> Habilidades Profesionales</h3>
                         <div class="prof-grid">
                             <div class="prof-skill-item">
-                                <i class="fa-solid fa-comments prof-icon"></i>
+                                <i class="fa-solid fa-comments prof-icon" aria-hidden="true"></i>
                                 <span>Comunicación</span>
                             </div>
                             <div class="prof-skill-item">
-                                <i class="fa-solid fa-users prof-icon"></i>
+                                <i class="fa-solid fa-users prof-icon" aria-hidden="true"></i>
                                 <span>Trabajo en Equipo</span>
                             </div>
                             <div class="prof-skill-item">
-                                <i class="fa-solid fa-lightbulb prof-icon"></i>
+                                <i class="fa-solid fa-lightbulb prof-icon" aria-hidden="true"></i>
                                 <span>Creatividad</span>
                             </div>
                             <div class="prof-skill-item">
-                                <i class="fa-solid fa-trophy prof-icon"></i>
+                                <i class="fa-solid fa-trophy prof-icon" aria-hidden="true"></i>
                                 <span>Dedicación</span>
                             </div>
                             <div class="prof-skill-item">
-                                <i class="fa-solid fa-puzzle-piece prof-icon"></i>
+                                <i class="fa-solid fa-puzzle-piece prof-icon" aria-hidden="true"></i>
                                 <span>Solución de Problemas</span>
                             </div>
                             <div class="prof-skill-item">
-                                <i class="fa-solid fa-clock prof-icon"></i>
+                                <i class="fa-solid fa-clock prof-icon" aria-hidden="true"></i>
                                 <span>Manejo de Tiempo</span>
                             </div>
                         </div>
                     </div>
-
                     <div class="info-card">
-                        <h3><i class="fa-solid fa-heart"></i> Intereses</h3>
+                        <h3><i class="fa-solid fa-heart" aria-hidden="true"></i> Intereses</h3>
                         <div class="interests-grid">
                             <div class="interest-item">
-                                <i class="fa-solid fa-gamepad"></i>
+                                <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
                                 <span>Gaming</span>
                             </div>
                             <div class="interest-item">
-                                <i class="fa-solid fa-headphones"></i>
-                                <span>Musica</span>
+                                <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+                                <span>Música</span>
                             </div>
                             <div class="interest-item">
-                                <i class="fa-solid fa-plane"></i>
+                                <i class="fa-solid fa-plane" aria-hidden="true"></i>
                                 <span>Viajes</span>
                             </div>
                             <div class="interest-item">
-                                <i class="fa-solid fa-person-hiking"></i>
+                                <i class="fa-solid fa-person-hiking" aria-hidden="true"></i>
                                 <span>Deporte</span>
                             </div>
                         </div>
@@ -207,281 +209,120 @@
         </div>
     </section>
 
-
-    <!-- SECCION SKILLS MEJORADA -->
+    <!-- SECCION SKILLS (generado por script.js desde el arreglo techSkills) -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>HABILIDADES TÉCNICAS</h2>
-
-            <div class="skills-container">
-
-                <div class="skills-box">
-                    <h4>Frontend</h4>
-                    <div class="tech-grid">
-                        <div class="skill-item"><i class="fa-brands fa-html5 icon-html"></i><span>HTML5</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-css3-alt icon-css"></i><span>CSS3</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-js icon-js"></i><span>JavaScript</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-file-code icon-ts"></i><span>TypeScript</span>
-                        </div>
-                        <div class="skill-item"><i class="fa-brands fa-react icon-react"></i><span>React</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-react icon-react"></i><span>React Native</span>
-                        </div>
-                        <div class="skill-item"><i class="fa-solid fa-layer-group icon-mui"></i><span>Material UI</span>
-                        </div>
-                    </div>
-
-                    <h4>Backend</h4>
-                    <div class="tech-grid">
-                        <div class="skill-item"><i class="fa-brands fa-python icon-python"></i><span>Python</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-node-js icon-node"></i><span>Node.js</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-server icon-django"></i><span>Django</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-php icon-php"></i><span>PHP</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-server icon-fastapi"></i><span>FastAPI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-box">
-                    <h4>Bases de Datos</h4>
-                    <div class="tech-grid">
-                        <div class="skill-item"><i class="fa-solid fa-database icon-mysql"></i><span>MySQL</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-database icon-sqlserver"></i><span>SQL
-                                Server</span></div>
-                        <div class="skill-item"><i
-                                class="fa-solid fa-database icon-postgres"></i><span>PostgreSQL</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-leaf icon-mongo"></i><span>MongoDB</span></div>
-                    </div>
-
-                    <h4>Mobile & Game Dev</h4>
-                    <div class="tech-grid">
-                        <div class="skill-item"><i class="fa-brands fa-android fa-4x"
-                                style="color: #63E6BE;"></i><span>Kotlin</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-gamepad icon-godot"></i><span>Godot</span></div>
-                    </div>
-
-                    <h4>Herramientas y Control de Versiones</h4>
-                    <div class="tech-grid">
-                        <div class="skill-item"><i class="fa-brands fa-git-alt icon-git"></i><span>Git</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-github icon-github"></i><span>GitHub</span></div>
-                        <div class="skill-item"><i class="fa-brands fa-linux icon-linux"></i><span>Linux</span></div>
-                    </div>
-
-                    <h4>Business Intelligence</h4>
-                    <div class="tech-grid">
-                        <div class="skill-item"><i class="fa-solid fa-chart-simple icon-powerbi"></i><span>Power
-                                BI</span></div>
-                        <div class="skill-item"><i class="fa-solid fa-file-excel icon-excel"></i><span>Excel</span>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="section-head">
+                <span class="eyebrow">Dossier — 02/05</span>
+                <h2>Habilidades Técnicas</h2>
+                <p class="subtitle">Herramientas y lenguajes que uso para diseñar, construir y mantener software.</p>
+            </div>
+            <div class="skills-container" id="skills-container">
+                <!-- Contenido inyectado por renderSkills() -->
             </div>
         </div>
     </section>
 
-
-    <!-- SECCION CURRICULUM -->
-        <section id="curriculum" class="curriculum">
-            <div class="contenido-seccion">
-                <h1>CURRICULUM</h1>
-                <div class="fila">
-                    <div class="col izquierda">
-                        <h2>EDUCACIÓN</h2>
-                        <div class="item izq">
-                            <h2>Ingeniería En Software</h2>
-                            <div class="institucion">
-                                <img src="img/udcLogo.png" alt="Logo Universidad de Colima">
-                                <span class="casa">Universidad de Colima</span>
-                            </div>
-                            <span class="fecha">2021 - 2025</span>
-                            <p>En esta etapa, evolucioné de programador a ingeniero, profundizando en principios avanzados
-                                de arquitectura de software, patrones de diseño y metodologías ágiles (Scrum). Apliqué estos
-                                conocimientos en el desarrollo de soluciones robustas y escalables, con un fuerte enfoque en
-                                la calidad del código y el testing.</p>
-                            <div class="conectori">
-                                <div class="circuloi"></div>
-                            </div>
-                        </div>
-                        <div class="item izq">
-                            <h2>Analista Programador</h2>
-                            <div class="institucion">
-                                <img src="img/udcLogo.png" alt="Logo Universidad de Colima">
-                                <span class="casa">Universidad de Colima</span>
-                            </div>
-                            <span class="fecha">2018 - 2021</span>
-                            <p>Formación técnica centrada en los fundamentos del desarrollo. Aquí adquirí una base sólida en
-                                lógica de programación, algoritmos y estructuras de datos.</p>
-                            <div class="conectori">
-                                <div class="circuloi"></div>
-                            </div>
-                        </div>
+    <!-- SECCION CURRICULUM (generado por script.js desde el objeto timeline) -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <div class="section-head">
+                <span class="eyebrow">Dossier — 03/05</span>
+                <h1>Curriculum</h1>
+                <p class="subtitle">Formación y experiencia laboral, en orden cronológico.</p>
+            </div>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div id="educacion-container">
+                        <!-- Contenido inyectado por renderTimelineColumn() -->
                     </div>
-
-                    <div class="col derecha">
-                        <h2>EXPERIENCIA LABORAL</h2>
-                                                <div class="item der">
-                            <h4>Desarrollador Jr.</h4>
-                            <div class="institucion">
-                                <img src="img/woodwardLogo.png" alt="Logo WoodWard Group">
-                                <span class="casa">WoodWard Group</span>
-                            </div>
-                            <span class="fecha">Septiembre 2025 - Actualidad</span>
-                            <p>Desarrollador de Software enfocado en el mantenimiento y desarrollo de aplicaciones web
-                                utilizando PHP, un framework propietario y SQL Server. Colaboro activamente dentro de un
-                                equipo que opera bajo la metodología ágil Scrum.</p>
-                            <div class="conectord">
-                                <div class="circulod"></div>
-                            </div>
-                        </div>
-                        <div class="item der">
-                            <h4>Analista de Datos</h4>
-                            <div class="institucion">
-                                <img src="img/alsaLogo.png" alt="Logo Alsa Informatica">
-                                <span class="casa">Alsa Informatica</span>
-                            </div>
-                            <span class="fecha">Octubre 2024 - Septiembre 2025</span>
-                            <ul>
-                                <li>Elaboración de reportes para el área contable mediante consultas SQL complejas.</li>
-                                <li>Desarrollo de automatizaciones para optimizar procesos y reducir tareas repetitivas.
-                                </li>
-                                <li>Soporte en la implementación de un nuevo sistema ERP, colaborando en la migración y
-                                    adaptación de datos.</li>
-                                <li>Apoyo a la toma de decisiones a través de reportes estructurados, claros y precisos.
-                                </li>
-                            </ul>
-                            <div class="conectord">
-                                <div class="circulod"></div>
-                            </div>
-                        </div>
-                        <div class="item der">
-                            <h4>Front-End Developer Jr.</h4>
-                            <div class="institucion">
-                                <img src="img/smarttieLogo.jpg" alt="Logo Smartiie">
-                                <span class="casa">Smartiie - Prácticas</span>
-                            </div>
-                            <span class="fecha">Noviembre 2024 - Junio 2025</span>
-                            <ul>
-                                <li>Desarrollo de componentes de interfaz de usuario responsivos utilizando React.</li>
-                                <li>Creación de herramientas internas y tableros para optimizar flujos de trabajo.</li>
-                                <li>Participación en revisiones de código y ciclos de sprints ágiles para garantizar
-                                    entregables de alta calidad.</li>
-                                <li>Colaboración con diseñadores para asegurar una implementación pixel-perfect de las
-                                    interfaces.</li>
-                            </ul>
-                            <div class="conectord">
-                                <div class="circulod"></div>
-                            </div>
-                        </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div id="experiencia-container">
+                        <!-- Contenido inyectado por renderTimelineColumn() -->
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    <!-- SECCION PORTFOLIO -->
+    <!-- SECCION PORTFOLIO (generado por script.js desde el arreglo projects) -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h1>PORTAFOLIO</h1>
-            <div class="galeria">
-
-                <a href="https://loxpas.github.io/" target="_blank" rel="noopener noreferrer" class="proyecto">
-                    <img src="img/laptop.png" alt="Captura de pantalla de página web personal">
-                    <div class="overlay">
-                        <h3>Pagina web personal</h3>
-                        <p>Portafolio</p>
-                    </div>
-                </a>
-
-                <a href="https://loxpas.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="proyecto">
-                    <img src="img/toloacheLogo.png" alt="Logo de la tienda en línea Toloache">
-                    <div class="overlay">
-                        <h3>Toloache</h3>
-                        <p>Tienda en Linea</p>
-                    </div>
-                </a>
-
-                <a href="https://loxpas.github.io/Colima.github.io/" target="_blank" rel="noopener noreferrer"
-                    class="proyecto">
-                    <img src="img/colimaLogo.png" alt="Logo del proyecto Descubre Colima">
-                    <div class="overlay">
-                        <h3>Colima</h3>
-                        <p>Descubre Colima</p>
-                    </div>
-                </a>
-
-                <a href="https://loxpas.itch.io/wild-adventure" target="_blank" rel="noopener noreferrer"
-                    class="proyecto">
-                    <img src="img/espadaLogo.png" alt="Logo del juego Wild Adventures">
-                    <div class="overlay">
-                        <h3>Wild Adventures</h3>
-                        <p>Juego Hecho en Godot</p>
-                    </div>
-                </a>
-
+            <div class="section-head">
+                <span class="eyebrow">Dossier — 04/05</span>
+                <h1>Portafolio</h1>
+                <p class="subtitle">Una muestra de proyectos personales y profesionales.</p>
+            </div>
+            <div class="galeria" id="galeria-container">
+                <!-- Contenido inyectado por renderProjects() -->
             </div>
         </div>
     </section>
 
-
     <!-- SECCION CONTACTO -->
-
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-            <h1>CONTACTO</h1>
+            <div class="section-head">
+                <span class="eyebrow">Dossier — 05/05</span>
+                <h1>Contacto</h1>
+                <p class="subtitle">¿Tienes un proyecto en mente? Escríbeme y te responderé lo antes posible.</p>
+            </div>
             <div class="fila">
                 <div class="col">
                     <form id="contactForm" action="https://formspree.io/f/mgveeyaj" method="POST">
                         <!-- Campo Nombre -->
-                        <label for="name">Nombre:</label>
+                        <label for="name" class="sr-only" style="display: none;">Nombre:</label>
                         <input type="text" id="name" name="name" placeholder="Tú Nombre" required>
 
                         <!-- Campo Número telefónico -->
-                        <label for="phone">Número telefónico:</label>
+                        <label for="phone" class="sr-only" style="display: none;">Número telefónico:</label>
                         <input type="tel" id="phone" name="phone" placeholder="Número telefónico" required>
 
                         <!-- Campo Dirección de correo -->
-                        <label for="email">Correo Electrónico:</label>
+                        <label for="email" class="sr-only" style="display: none;">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
 
                         <!-- Campo Tema -->
-                        <label for="subject">Tema:</label>
+                        <label for="subject" class="sr-only" style="display: none;">Tema:</label>
                         <input type="text" id="subject" name="subject" placeholder="Tema" required>
 
                         <!-- Campo Mensaje -->
-                        <label for="message">Mensaje:</label>
-                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje"
-                            required></textarea>
+                        <label for="message" class="sr-only" style="display: none;">Mensaje:</label>
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
 
                         <!-- Botón de Envío -->
                         <button type="submit" aria-label="Enviar Mensaje">
-                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
                             <span class="overlay"></span>
                         </button>
                     </form>
-
                     <!-- Mensaje de confirmación accesible -->
-                    <div id="confirmationMessage" style="display:none;" role="status" aria-live="polite">¡Gracias por tu
-                        mensaje!</div>
+                    <div id="confirmationMessage" style="display:none;" role="status" aria-live="polite">
+                        ¡Gracias por tu mensaje!
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- footer -->
     <footer>
-        <a href="#inicio" class="arriba" aria-label="Boton para regresa al inico  de la pagina">
-            <i class="fa-solid fa-angles-up"></i>
+        <a href="#inicio" class="arriba" aria-label="Botón para regresar al inicio de la página">
+            <i class="fa-solid fa-angles-up" aria-hidden="true"></i>
         </a>
         <div class="redes">
-            <a href="https://www.linkedin.com/in/loxpas/" target="_blank" aria-label="Perfil de Linkedin de Arturo"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/Loxpas" target="_blank" aria-label="Perfil de GitHub de Arturo"><i
-                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/loxpas/" target="_blank" aria-label="Perfil de Linkedin de Arturo" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Loxpas" target="_blank" aria-label="Perfil de GitHub de Arturo" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
         </div>
-        <p>© 2025 Arturo Velazquez. All rights reserved.</p>
+        <p>© 2025 Arturo Velazquez. Todos los derechos reservados.</p>
     </footer>
-
     <script src="forms.js"></script>
 </body>
-
 </html>
